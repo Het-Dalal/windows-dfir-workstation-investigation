@@ -1,5 +1,5 @@
 # Windows DFIR Investigation
-## Suspicious After-Hours Workstation Activity — HD-DFIR-001
+## Suspicious After-Hours Workstation Activity — HD-DFIR-002
 
 **Case Type:** Simulated Windows DFIR Investigation  
 **Examiner:** Het Dalal  
@@ -34,7 +34,7 @@ The investigation aimed to determine:
 
 ## Key Findings
 
-Analysis identified after-hours activity associated with the account of **Aarav Shah**.
+Analysis identified after-hours activity associated with **Aarav Shah**.
 
 The investigation established that:
 
@@ -49,7 +49,7 @@ The investigation established that:
 
 The sequence of artifacts is consistent with deliberate file-transfer activity followed by cleanup actions.
 
-> **Forensic note:** The copy operation to `E:\` is directly supported by PowerShell evidence. Attribution of the `E:\` volume specifically to the connected SanDisk device depends on drive-letter/volume mapping evidence; without that mapping, the relationship should be treated as correlation.
+> **Forensic Note:** The copy operation to `E:\` is directly supported by PowerShell evidence. Attribution of `E:\` specifically to the connected SanDisk device depends on drive-letter/volume mapping evidence; without that mapping, the relationship should be treated as correlation.
 
 ---
 
@@ -70,27 +70,25 @@ The sequence of artifacts is consistent with deliberate file-transfer activity f
 
 ## Tools Used
 
-### Autopsy
-Used for forensic artifact analysis, filesystem examination, deleted-file analysis, browser activity and timeline correlation.
+**Autopsy** — Filesystem examination, deleted-file analysis, browser activity, artifact analysis and timeline correlation.
 
-### Registry Explorer
-Used for examination and verification of relevant Windows Registry artifacts.
+**Registry Explorer** — Examination and verification of relevant Windows Registry artifacts.
 
 ---
 
 ## Case Documentation
 
-The repository contains two documents:
+### 📋 Investigation Brief
 
-### Case Brief
-The original investigation scenario and questions used to begin the examination.
+Contains the original scenario, investigative objectives and questions provided before beginning the forensic examination.
 
-**[View Case Brief](./HD-DFIR-002_Case_Brief.pdf)**
+➡️ **[Open Investigation Brief](./HD-DFIR-002_Investigation_Brief.pdf)**
 
-### Full Forensic Report
-Complete investigation containing the methodology, evidence screenshots, artifact analysis, reconstructed timeline, findings and final assessment.
+### 🔎 Full Forensic Report
 
-**[View Full Forensic Report](./HD-DFIR-002_Forensic_Report.pdf)**
+Contains the complete investigation, evidence screenshots, artifact analysis, reconstructed timeline, findings and final assessment.
+
+➡️ **[Open Full Forensic Report](./HD-DFIR-002_Forensic_Report.pdf)**
 
 ---
 
@@ -100,5 +98,16 @@ Complete investigation containing the methodology, evidence screenshots, artifac
 windows-dfir-workstation-investigation/
 │
 ├── README.md
-├── HD-DFIR-002_Case_Brief.pdf
+├── HD-DFIR-002_Investigation_Brief.pdf
 └── HD-DFIR-002_Forensic_Report.pdf
+```
+
+---
+
+## Disclaimer
+
+This repository documents a **simulated Windows forensic investigation created for DFIR practice and portfolio development**.
+
+The incident scenario, organization and individuals represented in the case are fictional. No real-world system was compromised or investigated.
+
+The forensic analysis, evidence correlation and conclusions documented in the investigation represent my own investigative work.
