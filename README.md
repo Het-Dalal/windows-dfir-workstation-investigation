@@ -1,7 +1,7 @@
 # Windows DFIR Investigation
 ## Suspicious After-Hours Workstation Activity — HD-DFIR-002
 
-**Case Type:** Simulated Windows DFIR Investigation  
+**Case Type:** Windows DFIR Investigation  
 **Examiner:** Het Dalal  
 **Tools Used:** Autopsy, Registry Explorer  
 **Status:** Investigation Complete
